@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kathy's Webpage</title>
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="title-section">
+        <h1 id="title">Kathy Cho</h1>
+        <a href="visualizations.html" class="visualization-link">
+            <p>See my visualization!</p>
+            <i class="fa fa-arrow-right" style="font-size: 18px"></i>
+        </a>
+    </div>
+    <div class="section intro-section">
+        <h2>👩‍💻 About Me</h2>
+        <p>Hello! My name is Kathy, and I'm majoring in Computing Science and minoring in Interactive Arts and Technology. 
+            I love information system and web / app development, especially front-end stuff. I'm also interested in UI design. Other than programming, I love to knit, game and bake.</p>
+    </div>
+    <div class="section education-section">
+        <h2>📖 Education</h2>
+        <ul class="list">
+            <li class="list-item">
+                <div>
+                    <h4>Bachelor's Degree in Computer Science, minor in Interactive Arts and Technology</h4>
+                    <p>Simon Fraser University  |  Sep 2021 - Apr 2026</p>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div class="section skills-section">
+        <h2>💻 Skills</h2>
+        <ul class="list">
+            <li class="list-item"><b>Programming Languages / Frameworks</b> : React, React Native, Angular, Typescript, Python, Java Spring</li>
+            <li class="list-item"><b>Tools</b> : Git, Azure, JIRA, Confluence, Postman, Figma, AmazonS3</li>
+        </ul>
+    </div>
+    <div class="section experience-section">
+        <h2>💼 Experience</h2>
+        <ul class="list">
+            <li class="list-item">
+                <div>
+                    <h4>Application Developer Co-op</h4>
+                    <p>CIBC  |  Sep 2024 - Apr 2025</p>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div class="section projects-section">
+        <h2>💡 Projects</h2>
+        <ul class="list">
+            <li class="list-item">
+                <div>
+                    <h4>KOGO - College Social Platform</h4>
+                    <p>Full Stack Developer / UI Designer  |  Jan 2024 - Apr 2025</p>
+                </div>
+            </li>
+            <li class="list-item">
+                <div>
+                    <h4>PlanByYou</h4>
+                    <p>Application Developer  |  Sep 2025 - Dec 2025</p>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div class="section images-section">
+
+    </div>
+    <div class="section contact-section">
+        <h2>📞 Contact Me</h2>
+        <div class="contact-content">
+            <div class="contact-text">
+                <p>Email: hca171@sfu.ca</p>
+                <p>Github: <a href="https://github.com/orkr3426">https://github.com/orkr3426</a></p>
+            </div>
+            <form name="contactForm" onsubmit="return validateForm()">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email">
+                <label for="message">Message:</label>
+                <textarea id="message" name="message"></textarea>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+</body>
+<script src="main.js" type="text/javascript"></script>
+</html>
