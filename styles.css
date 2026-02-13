@@ -9,8 +9,8 @@ body {
     color: #333;
     font-family: "Ubuntu", sans-serif;
     padding-top: 30px;
-    margin-left: 40px;
-    margin-right: 40px;
+    margin-left: 100px;
+    margin-right: 100px;
 }
 
 a {
@@ -169,7 +169,7 @@ div[id^="vis"] {
 }
 
 div[id^="vis"]:hover {
-    box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
     transition: 0.3s;
 }
 
