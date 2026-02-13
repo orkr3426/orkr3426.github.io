@@ -6,7 +6,7 @@
 
 body {
     background-color: #f0f0f0;
-    color: #233675;
+    color: #333;
     font-family: "Ubuntu", sans-serif;
     padding-top: 30px;
     margin-left: 40px;
@@ -15,7 +15,7 @@ body {
 
 a {
     text-decoration: none;
-    color: #233675;
+    color: #333;
 }
 
 #title {
@@ -130,7 +130,7 @@ form textarea {
 
 form button {
     width: 100%;
-    background-color: #233675;
+    background-color: #333;
     color: #faf6f2;
     border: none;
     padding: 10px;
@@ -150,6 +150,34 @@ form button {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.vis-label {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin: 2rem 1rem 0.5rem 1rem;
+}
+
+div[id^="vis"] {
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    padding: 1rem;
+    margin: 1rem auto 2rem auto;
+}
+
+div[id^="vis"]:hover {
+    box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+    transition: 0.3s;
+}
+
+@media screen and (max-width: 768px) {
+    div[id^="vis"] {
+        margin: 1rem;
+        padding: 0.5rem;
+    }
 }
 
 @media (max-width: 320px) {
