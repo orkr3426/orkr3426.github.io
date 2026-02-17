@@ -256,11 +256,12 @@ const vis4_2 = {
       groupby: ["Genre"]
     },
     {
-      window: [{ 
-        op: "dense_rank",
-        as: "rank"
-      }],
-      sort: [{ field: "genre_total", order: "descending" }],
+      window: [
+        { op: "dense_rank", as: "rank" }
+      ],
+      sort: [
+        { field: "genre_total", order: "descending" }
+      ],
       groupby: [],
     },
     { filter: "datum.rank <= 5" }
@@ -273,8 +274,7 @@ const vis4_2 = {
   encoding: {
     x: {
       field: "Year",
-      type: "ordinal",
-      title: "Year"
+      type: "temporal",
     },
 
     y: {
